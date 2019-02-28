@@ -3,98 +3,138 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HAPZ</title>
 </head>
 
 <body>
+    <div class='container m-0 p-0 mx-auto'>
+        <div class="row">
+            <div class='col-sm-4 mx-auto bg-white p-0'>
+                <header class='position-relative'>
 
-    <div class='main'>
+                    <div class='p-4'>
 
-        <header class='header'>
+                        <img class='pl-2' alt='logo' src='img/logo.png' />
+                        <div class='pt-4 text-white text-uppercase text-shadow font-weight-bold'>Você está sem saldo
+                        </div>
+                        <div class='pt-2 text-white text-uppercase text-shadow recharge w-50'>Recarregue agora</div>
 
-            <img class='icon' alt='icon' src='img/icon.svg' />
-            <img class='icon-detail' alt='icon-detail' src='img/icon_detail.svg' />
-            <img class='logo' alt='logo' src='img/logo.svg' />
+                        <div class='row pt-5'>
+                            <div class='col pt-3 pr-2'>
+                                <div class='card'>
+                                    <div class="card-title text-center font-weight-bold text-uppercase mb-0">R$ 15</div>
+                                    <div class="card-text text-center">E ganhe R$5 de bônus</div>
+                                    <a href="#" class="btn btn-contract mt-2">Contratar</a>
+                                </div>
+                            </div>
+                            <div class='col pt-3 pl-2'>
+                                <div class='card'>
+                                    <div class="card-title text-center font-weight-bold text-uppercase mb-0">R$ 20</div>
+                                    <div class="card-text text-center">E ganhe R$10 de bônus</div>
+                                    <a href="#" class="btn btn-contract mt-2">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class='status'>
-                Você está sem saldo
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item w-50">
+                            <a class="nav-link active text-center text-uppercase font-weight-bold" id="creditos-tab"
+                                data-toggle="tab" href="#creditos" role="tab" aria-controls="creditos"
+                                aria-selected="true">Créditos</a>
+                        </li>
+                        <li class="nav-item w-50">
+                            <a class="nav-link text-center text-uppercase" id="dados-tab" data-toggle="tab"
+                                href="#dados" role="tab" aria-controls="dados" aria-selected="false">Dados</a>
+                        </li>
+                    </ul>
+                </header>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="creditos" role="tabpanel" aria-labelledby="creditos-tab">
+
+
+                        <div class='row pt-4 px-3'>
+
+                            <div class='col pr-1'>
+                                <div class='card position-relative'>
+                                    <div class='card-gradient position-absolute'></div>
+                                    <img class="card-img-top" src="img/image 5.jpg" alt="Card image cap" />
+                                    <div
+                                        class="card-title text-center text-white font-weight-bold text-uppercase position-absolute">
+                                        HAPZ Descontos</div>
+                                    <a href="#"
+                                        class="btn btn-sign text-white text-uppercase position-absolute">Assine</a>
+                                </div>
+                                <div class='card-text pt-2 pl-2 pb-0 pr-0 font-weight-bold'>Saraiva 10%</div>
+                                <div class='card-text pt-2 pl-2 text-uppercase'>Curta o som</div>
+                            </div>
+                            <div class='col pl-1'>
+                                <div class='card position-relative'>
+                                    <div class='card-gradient position-absolute'></div>
+                                    <img class="card-img-top" src="img/image 6.jpg" alt="Card image cap" />
+                                    <div
+                                        class="card-title text-center text-white font-weight-bold text-uppercase position-absolute">
+                                        HAPFIT</div>
+                                    <a href="#"
+                                        class="btn btn-sign text-white text-uppercase position-absolute">Assine</a>
+                                </div>
+                                <div class='card-text pt-2 pl-2 pb-0 pr-0 font-weight-bold'>Corpo perfeito</div>
+                                <div class='card-text pt-2 pl-2 text-uppercase'>5 dias grátis</div>
+                            </div>
+                        </div>
+
+                        <div class='row pb-4 pt-3 px-3'>
+
+                            <div class='col pr-1'>
+                                <div class='card position-relative'>
+                                    <div class='card-gradient position-absolute'></div>
+                                    <img class="card-img-top" src="img/image 3.jpg" alt="Card image cap" />
+                                    <div
+                                        class="card-title text-center text-white font-weight-bold text-uppercase position-absolute">
+                                        HAPZ Sounds</div>
+                                    <a href="#"
+                                        class="btn btn-sign text-white text-uppercase position-absolute">Assine</a>
+                                </div>
+                                <div class='card-text pt-2 pl-2 pb-0 pr-0 font-weight-bold'>Curta um som</div>
+                                <div class='card-text pt-2 pl-2 text-uppercase'>7 dias grátis</div>
+                            </div>
+                            <div class='col pl-1'>
+                                <div class='card position-relative'>
+                                    <div class='card-gradient position-absolute'></div>
+                                    <img class="card-img-top" src="img/image 7.jpg" alt="Card image cap" />
+                                    <div
+                                        class="card-title text-center text-white font-weight-bold text-uppercase position-absolute">
+                                        PlayKids</div>
+                                    <a href="#"
+                                        class="btn btn-sign text-white text-uppercase position-absolute">Assine</a>
+
+                                </div>
+                                <div class='card-text pt-2 pl-2 pb-0 pr-0 font-weight-bold'>Muita diversão!</div>
+                                <div class='card-text pt-2 pl-2 text-uppercase'>3 dias grátis</div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="dados" role="tabpanel" aria-labelledby="dados-tab">
+
+                        AAAAAA
+                    </div>
+                </div>
+
+
             </div>
-
-            <div class='recharge'>
-                Recarregue agora
-            </div>
-
-            <div class='card-left'></div>
-
-            <div class='value-left'>
-                R$ 15
-            </div>
-
-            <div class='hire-left'></div>
-
-            <div class='hire-left-text'>
-                Contratar
-            </div>
-
-            <div class='description-left'>
-                E ganhe R$5 de bônus
-            </div>
-
-            <div class='card-right'></div>
-
-            <div class='value-right'>
-                R$ 20
-            </div>
-
-            <div class='hire-right'></div>
-            <div class='hire-right-text'>
-                Contratar
-            </div>
-
-            <div class='description-right'>
-                E ganhe R$10 de bônus
-            </div>
-
-            <div class='tabs'></div>
-
-            <div class='tab-left'></div>
-
-            <div class='tab-left-selected'></div>
-
-            <div class='tab-left-text'>
-                <a href="index.html">Créditos</a>
-            </div>
-
-            <div class='tab-right'></div>
-
-            <div class='tab-right-selected'></div>
-
-            <div class='tab-right-text'>
-                <a href="dados.html">Dados</a>
-            </div>
-        </header>
-
-        <section class="content">
-
-            <div class='card-top-left'></div>
-            <div class='card-top-right'></div>
-
-            <div class='card-bottom-left'></div>
-            <div class='card-bottom-right'></div>
-        </section>
-
-
-
-
-
+        </div>
 
     </div>
-
-    </div>
-
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
