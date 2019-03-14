@@ -17,12 +17,12 @@
                 <header class='position-relative' v-bind:class="aplicar_classe">
 
                     <!-- Logo -->
-                    <div class='p-4'>
+                    <div class='p-4 text-white text-uppercase'>
                         <a href='#'><img class='pl-2' alt='logo' src='img/logo.png' /></a>
-                        <div class='pt-4 text-white text-uppercase text-shadow font-weight-bold'>
+                        <div class='pt-4 text-shadow font-weight-bold'>
                             Você está sem saldo
                         </div>
-                        <div class='pt-2 text-white text-uppercase text-shadow recharge w-50'>
+                        <div class='pt-2 text-shadow recharge w-50'>
                             Recarregue agora
                         </div>
 
@@ -44,12 +44,12 @@
                             </div>
 
                             <div class='col pt-3 pr-2' v-show='tab_dados'>
-                                <div class='card'>
+                                <div class='card text-center'>
                                     <span v-for='(key, value) in planos.dados' v-if='key.id == 3'>
-                                        <div class="card-title text-center font-weight-bold text-uppercase mb-0">
+                                        <div class="card-title font-weight-bold text-uppercase mb-0">
                                             {{ key.gb_amount}} GB
                                         </div>
-                                        <div class="card-text text-center">
+                                        <div class="card-text">
                                             Redes sociais ilimitadas
                                         </div>
                                     </span>
@@ -58,12 +58,12 @@
                             </div>
 
                             <div class='col pt-3 pl-2' v-show='tab_creditos'>
-                                <div class='card'>
+                                <div class='card text-center'>
                                     <span v-for='(key, value) in planos.recarga' v-if='key.id == 2'>
-                                        <div class="card-title text-center font-weight-bold text-uppercase mb-0">
+                                        <div class="card-title font-weight-bold text-uppercase mb-0">
                                             R$ {{ key.amount}}
                                         </div>
-                                        <div class="card-text text-center">
+                                        <div class="card-text">
                                             E ganhe R$ {{ key.bonus_amount}} de bônus
                                         </div>
                                     </span>
@@ -72,12 +72,12 @@
                             </div>
 
                             <div class='col pt-3 pl-2' v-show='tab_dados'>
-                                <div class='card'>
+                                <div class='card text-center'>
                                     <span v-for='(key, value) in planos.dados' v-if='key.id == 5'>
-                                        <div class="card-title text-center font-weight-bold text-uppercase mb-0">
+                                        <div class="card-title font-weight-bold text-uppercase mb-0">
                                             {{ key.gb_amount}} GB
                                         </div>
-                                        <div class="card-text text-center">
+                                        <div class="card-text">
                                             Redes sociais ilimitadas
                                         </div>
                                     </span>
@@ -90,14 +90,14 @@
 
                     <!-- Tabs -->
 
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs text-center text-uppercase" id="myTab" role="tablist">
                         <li class="nav-item w-50" v-on:click="tabCreditos">
-                            <a class="nav-link active text-center text-uppercase font-weight-bold" id="creditos-tab"
+                            <a class="nav-link active font-weight-bold" id="creditos-tab"
                                 data-toggle="tab" href="#creditos" role="tab" aria-controls="creditos"
                                 aria-selected="true">Créditos</a>
                         </li>
                         <li class="nav-item w-50" v-on:click="tabDados">
-                            <a class="nav-link text-center text-uppercase" id="dados-tab" data-toggle="tab"
+                            <a class="nav-link" id="dados-tab" data-toggle="tab"
                                 href="#dados" role="tab" aria-controls="dados" aria-selected="false">Dados</a>
                         </li>
                     </ul>
